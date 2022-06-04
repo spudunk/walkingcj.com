@@ -31,6 +31,64 @@ shade 4 = #002513
 body {
   color: #350e00;
 }
+
+/* HEADER AND NAVIGATION BAR */
+header {
+  grid-column: 1 / -1;
+
+  display: grid;
+  gap: 0 1em;
+  align-items: center;
+  /* justify-self: center; */
+  justify-content: center;
+  padding: 0.8em 0;
+  margin-bottom: 1.4em;
+  background-color: #704e42;
+  color: #e1c7be;
+}
+
+#brand {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  /* justify-items: center; */
+}
+#brand #logo {
+  width: 2.1em;
+  height: 2.1em;
+}
+#brand svg {
+  filter: drop-shadow(0 4px 3px black);
+}
+#brand path {
+  fill: white;
+}
+#brand h1 {
+  color: white;
+  grid-column: 2 / -1;
+  text-shadow: 0px 4px 3px black;
+  font-weight: 400;
+  font-size: 2.1rem;
+  /* letter-spacing: 0.04em; */
+}
+
+nav {
+  grid-column: 1/-1;
+  justify-self: center;
+  /* TEMP DISABLE NAV <----------------- */
+  display: none;
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+}
+nav a:hover {
+  font-weight: 700;
+}
+nav a {
+  /* color: #517564; */
+  padding-right: 1em;
+}
+
+/* MAIN SECTION */
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -40,37 +98,6 @@ body {
   margin-right: auto;
 }
 
-header {
-  display: grid;
-  grid-column: 1 / -1;
-  gap: 0 1em;
-  /* justify-self: center; */
-  justify-content: center;
-  padding-top: 0.8em;
-  margin-bottom: 1.4em;
-  background-color: #704e42;
-  color: #e1c7be;
-}
-header h1 {
-  color: white;
-  text-shadow: 0px 4px 3px rgb(0, 0, 0);
-}
-nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding-bottom: 0.8em;
-}
-nav a:hover {
-  font-weight: 700;
-}
-nav a {
-  /* color: #517564; */
-  padding-right: 1em;
-}
-h1 {
-  font-size: 2.1rem;
-  letter-spacing: 0.04em;
-}
 h2 {
   font-size: 1.8rem;
 }
@@ -108,6 +135,7 @@ img {
   height: auto;
 }
 
+/* COMPONENTS */
 #button-div {
   justify-self: center;
 }
