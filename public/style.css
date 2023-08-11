@@ -72,22 +72,6 @@ header {
   /* letter-spacing: 0.04em; */
 }
 
-nav {
-  grid-column: 1/-1;
-  justify-self: center;
-  /* TEMP DISABLE NAV <----------------- */
-  display: none;
-  /* display: grid; */
-  grid-template-columns: repeat(4, 1fr);
-}
-nav a:hover {
-  font-weight: 700;
-}
-nav a {
-  /* color: #517564; */
-  padding-right: 1em;
-}
-
 /* MAIN SECTION */
 .container {
   display: grid;
@@ -165,6 +149,7 @@ footer {
   grid-column: 1 / -1;
   padding-bottom: 1em;
   padding-left: 1em;
+  padding-top: 1em;
   font-size: 0.8rem;
 }
 
