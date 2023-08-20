@@ -40,6 +40,41 @@
 		<!-- <FeMouse class="absolute bottom-16 mx-auto animate-bounce text-5xl text-white" /> -->
 	</div>
 </div>
+
+<div class="-mt-20 flex flex-col rounded-3xl bg-white">
+	<!-- ABOUT -->
+	<div class="flex flex-col gap-4 rounded-t-3xl bg-neutral-200">
+		<div class="grid md:grid-cols-2">
+			<div class="flex flex-col justify-center gap-4 px-10 py-4 lg:text-lg">
+				<h2 class="text-center text-4xl font-semibold md:text-left">About Our Ranch</h2>
+				<p>
+					Walking CJ Ranch is a family-owned cattle company dedicated to providing high-quality
+					custom beef raised with the customers preferences. With a deep-rooted commitment to the
+					humane treatment of animals, we believe that a superior quality of life for our animals
+					directly translates into exceptional meat. Our animals are raised on lush pastures,
+					ensuring that your dining experience remains both delicious and ethically sound. In
+					addition to beef we also raise other livestock to order on a limited basis, including pork
+					and lamb.
+				</p>
+				<p>
+					In addition to our premium meat offerings, Walking CJ Ranch also leases property to assist
+					landowners in utilizing their pasture effectively without the burden or risk of caring for
+					cattle themselves. We understand the challenges faced by landowners who wish to maximize
+					their properties while preserving their time and resources. Our goal is to create a
+					cooperative network of small farmers committed to providing the highest quality meats to
+					their families and our community.
+				</p>
+			</div>
+			<div class="overflow-hidden md:order-first">
+				<img
+					src="/images/cowpetter.jpg"
+					alt="rancher"
+					class="aspect-square h-full w-full rounded-none object-cover object-center md:rounded-tl-3xl"
+				/>
+			</div>
+		</div>
+	</div>
+
 	<!-- Products -->
 	<div class="flex flex-col gap-4 px-4 pt-4 text-center md:px-0">
 		<h2 class="text-4xl font-semibold">What we do</h2>
