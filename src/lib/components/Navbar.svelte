@@ -12,7 +12,7 @@
 </script>
 
 <nav
-	class={`fixed left-0 top-0 z-10 flex w-full flex-row items-center justify-between gap-2 bg-black px-4 py-2 font-poppins text-white transition-all duration-500 ${
+	class={`fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between gap-2 bg-black px-4 py-2 font-poppins text-white transition-all duration-500 ${
 		scrollVal ? 'bg-opacity-90 text-xl sm:text-2xl ' : 'bg-opacity-25 text-2xl sm:text-4xl'
 	}`}
 >
