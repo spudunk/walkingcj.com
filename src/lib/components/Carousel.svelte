@@ -33,7 +33,7 @@
 {#each images as image, i}
 	{#if i === carouselIndex}
 		<img
-			class="absolute left-0 top-0 -z-10 h-[95vh] w-screen object-cover"
+			class="carouselImage absolute left-0 top-0 -z-10 h-[95vh] w-screen object-cover"
 			src={image.imagePath}
 			in:send={{ key: 'carousel' }}
 			out:recieve={{ key: 'carousel' }}
@@ -42,3 +42,9 @@
 		/>
 	{/if}
 {/each}
+
+<style>
+	.carouselImage {
+		filter: brightness(0.5);
+	}
+</style>
