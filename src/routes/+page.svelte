@@ -76,7 +76,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+
 	<!-- Products -->
 	<div class="flex flex-col gap-4 px-4 pt-4 text-center md:px-0">
 		<h2 class="text-4xl font-semibold">What we do</h2>
@@ -86,3 +86,4 @@
 			{/each}
 		</div>
 	</div>
+</div>
