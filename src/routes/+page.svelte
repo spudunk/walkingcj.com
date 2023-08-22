@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Carousel from '$lib/components/Carousel.svelte';
 	import ProductCard from '$lib/components/ProductCard.svelte';
-	import FeMouse from '~icons/fe/mouse';
 	import ReviewCard from '$lib/components/ReviewCard.svelte';
+	// import FeMouse from '~icons/fe/mouse';
+	import MdiPhone from '~icons/mdi/phone';
 	import MdiGoogle from '~icons/mdi/google';
 	import MdiFacebook from '~icons/mdi/facebook';
+
 	const reviews = [
 		{
 			name: 'Sage Bannick',
