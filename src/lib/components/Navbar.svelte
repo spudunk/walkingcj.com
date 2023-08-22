@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MaterialSymbolsCallOutline from '~icons/material-symbols/call-outline';
+	import MdiPhone from '~icons/mdi/phone';
 
 	import { scrolled } from '$lib/stores';
 	import Logo from './Logo.svelte';
@@ -25,7 +25,7 @@
 		class="hidden h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-2 text-lg md:flex"
 		href="#contact"
 	>
-		<MaterialSymbolsCallOutline />
+		<MdiPhone />
 		Contact Us
 	</a>
 	<!-- mobile -->
@@ -33,7 +33,7 @@
 		class="flex h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-1 text-lg md:hidden"
 		href="tel:3602695572"
 	>
-		<MaterialSymbolsCallOutline />
+		<MdiPhone />
 		Call Us
 	</a>
 </nav>
