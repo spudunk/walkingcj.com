@@ -140,4 +140,49 @@
 			</div>
 		</div>
 	</div>
+	<!-- Contact -->
+	<div class="flex flex-col gap-4 text-start">
+		<div class="grid md:grid-cols-2">
+			<div
+				class="flex w-full flex-col justify-center gap-4 px-10 py-4 text-center md:w-auto md:text-start lg:text-lg"
+			>
+				<h2 class="text-center text-4xl font-semibold md:text-left">Like what you see?</h2>
+				<p>
+					We prefer to talk to our customers to keep things personal and maintain accountability.
+					Call now to get on our waiting list or learn more.
+				</p>
+				<a
+					href="tel:3602695572"
+					class="mt-0 flex flex-row items-center justify-center gap-2 align-middle font-poppins text-2xl font-semibold text-red-700 md:justify-start"
+				>
+					<MdiPhone />
+					(360) 269-5572
+				</a>
+			</div>
+			<div class="relative h-screen overflow-hidden md:order-last">
+				<div
+					class="absolute left-0 top-0 flex flex-col bg-black/75 p-4 text-white md:bottom-0 md:top-auto"
+				>
+					<div class="flex flex-row items-center gap-2">
+						<img
+							src="/images/cowpetter.jpg"
+							alt="rancher"
+							class="aspect-square h-16 w-16 rounded-full object-cover object-center"
+						/>
+						<span class="font-semi text-2xl">John Hicks</span>
+					</div>
+					<p>
+						John is a second generation farmer on the Walking CJ Ranch property. He values strong
+						integrity and stands by his word and quality guarantee. He's a father, family man, and a
+						great friend to his community.
+					</p>
+				</div>
+				<img
+					src="/images/cowpetter.jpg"
+					alt="rancher"
+					class="aspect-square h-full w-full object-cover object-center"
+				/>
+			</div>
+		</div>
+	</div>
 </div>
