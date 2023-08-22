@@ -3,6 +3,7 @@
 	import { scrolled } from '$lib/stores';
 	import { onMount } from 'svelte';
 	import '../app.css';
+	import Footer from '$lib/components/Footer.svelte';
 
 	onMount(() => {
 		onscroll = () => {
@@ -56,3 +57,4 @@
 
 <Navbar />
 <slot />
+<Footer />
