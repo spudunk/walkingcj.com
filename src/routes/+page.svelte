@@ -93,9 +93,9 @@
 			</div>
 			<div class="overflow-hidden md:order-first">
 				<img
-					src="/images/cowpetter.jpg"
+					src="/images/landscape.jpg"
 					alt="rancher"
-					class="aspect-square h-full w-full rounded-none object-cover object-center md:rounded-tl-3xl"
+					class="aspect-square h-screen w-full rounded-none object-cover object-center md:rounded-tl-3xl"
 				/>
 			</div>
 		</div>
