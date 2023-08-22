@@ -2,6 +2,30 @@
 	import Carousel from '$lib/components/Carousel.svelte';
 	import ProductCard from '$lib/components/ProductCard.svelte';
 	import FeMouse from '~icons/fe/mouse';
+	import ReviewCard from '$lib/components/ReviewCard.svelte';
+	import MdiGoogle from '~icons/mdi/google';
+	import MdiFacebook from '~icons/mdi/facebook';
+	const reviews = [
+		{
+			name: 'Sage Bannick',
+			review:
+				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
+			img: '/images/reviews/0.webp'
+		},
+		{
+			name: 'Sage Bannick',
+			review:
+				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
+			img: '/images/reviews/1.webp'
+		},
+		{
+			name: 'Sage Bannick',
+			review:
+				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
+			img: '/images/reviews/2.webp'
+		}
+	];
+
 	const products = [
 		{
 			img: '/images/products/0.webp',
@@ -84,6 +108,36 @@
 			{#each products as product}
 				<ProductCard {...product} />
 			{/each}
+		</div>
+	</div>
+
+	<!-- Credibility -->
+	<div class="flex flex-col gap-4 bg-neutral-200 px-4 py-4 text-center">
+		<h2 class="text-4xl font-semibold text-black">What our customers say</h2>
+		<div class="flex flex-col gap-5 md:mt-4">
+			<div class="flex w-full flex-col justify-center gap-5 md:flex-row">
+				<ReviewCard {...reviews[0]} class="md:-rotate-6" />
+				<ReviewCard {...reviews[1]} class="md:rotate-6" />
+			</div>
+			<div class="flex w-full flex-col justify-center gap-5 md:flex-row">
+				<ReviewCard {...reviews[2]} />
+			</div>
+			<div class="flex flex-row justify-center gap-5">
+				<a
+					href="https://example.com"
+					class="items-center gap-2 rounded-lg bg-[#4267B2] px-2 py-2 text-lg text-white md:flex"
+				>
+					<MdiFacebook />
+					Review us on Facebook
+				</a>
+				<a
+					href="https://example.com"
+					class="items-center gap-2 rounded-lg bg-[#DB4437] px-2 py-2 text-lg text-white md:flex"
+				>
+					<MdiGoogle />
+					Review us on Google
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
