@@ -22,7 +22,7 @@
 	</div>
 	<!-- desktop/tablet -->
 	<a
-		class="hidden h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-2 text-lg md:flex"
+		class="hidden h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-2 text-lg transition-colors hover:bg-red-600 md:flex"
 		href="#contact"
 	>
 		<MdiPhone />
@@ -30,7 +30,7 @@
 	</a>
 	<!-- mobile -->
 	<a
-		class="flex h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-1 text-lg md:hidden"
+		class="flex h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-1 text-lg transition-colors hover:bg-red-600 md:hidden"
 		href="tel:3602695572"
 	>
 		<MdiPhone />
