@@ -28,7 +28,7 @@
 			<span class="text-xl font-semibold">{name}</span>
 			<MdiFacebookMessenger class="text-xl text-slate-300" />
 		</div>
-		<span class="whitespace-pre">{review}</span>
+		<span class="whitespace-pre-wrap">{review}</span>
 	</div>
 </div>
 
