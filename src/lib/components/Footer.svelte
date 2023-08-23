@@ -7,8 +7,10 @@
 	import MdiGoogle from '~icons/mdi/google';
 </script>
 
-<footer class="bg-red-700 py-4 px-4">
-	<div class="container mx-auto flex w-full flex-row justify-between font-semibold text-white">
+<footer class="bg-red-700 px-4 py-4">
+	<div
+		class="mx-auto flex w-full flex-col justify-between gap-3 font-semibold text-white md:flex-row"
+	>
 		<div class="flex flex-row gap-4 text-xl text-white">
 			<a
 				href="tel:3602695572"
@@ -43,7 +45,7 @@
 		</div>
 		<div class="flex flex-row items-center gap-5">
 			<Logo class="drop-shadow-2xl transition-colors" />
-			<span class="hidden md:block">© 2023 Walking CJ Ranch</span>
+			<span class="block">© 2023 Walking CJ Ranch</span>
 		</div>
 	</div>
 </footer>
