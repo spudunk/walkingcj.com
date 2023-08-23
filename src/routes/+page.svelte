@@ -93,7 +93,7 @@
 					their families and our community.
 				</p>
 			</div>
-			<div class="overflow-hidden md:order-first">
+			<div class="overflow-hidden hidden md:block md:order-first">
 				<img
 					src="/images/landscape.jpg"
 					alt="rancher"
