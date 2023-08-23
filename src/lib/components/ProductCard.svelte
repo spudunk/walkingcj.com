@@ -58,7 +58,7 @@
 		<div
 			use:melt={$content}
 			transition:scale
-			class="fixed left-0 top-0 z-[100] flex h-screen w-screen flex-col gap-4 rounded-lg bg-white p-6 shadow-lg md:left-1/2 md:top-1/2 md:max-h-[85vh] md:w-[90vw] md:max-w-[450px] md:-translate-x-1/2 md:-translate-y-1/2"
+			class="fixed left-0 top-10 z-[100] flex h-fit w-screen flex-col gap-4 rounded-lg bg-white p-6 shadow-lg md:left-1/2 md:top-1/2 md:max-h-[85vh] md:w-[90vw] md:max-w-[450px] md:-translate-x-1/2 md:-translate-y-1/2"
 		>
 			<div>
 				<h2 use:melt={$title} class="m-0 text-lg font-medium text-black">
