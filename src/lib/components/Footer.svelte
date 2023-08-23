@@ -7,7 +7,7 @@
 	import MdiGoogle from '~icons/mdi/google';
 </script>
 
-<footer class="bg-red-700 py-4">
+<footer class="bg-red-700 py-4 px-4">
 	<div class="container mx-auto flex w-full flex-row justify-between font-semibold text-white">
 		<div class="flex flex-row gap-4 text-xl text-white">
 			<a
