@@ -30,9 +30,9 @@
 		class="absolute left-0 top-0 z-40 flex h-full w-full flex-col items-center justify-center gap-2 rounded-lg bg-black bg-opacity-50 p-2 md:rounded-none"
 	>
 		<div class="flex flex-col items-center gap-1">
-			<h2 class="text-4xl">{productTitle}</h2>
+			<h2 class="xs:text-4xl text-2xl">{productTitle}</h2>
 			{#if subtitle}
-				<h3 class="text-2xl">{subtitle}</h3>
+				<h3 class="xs:text-2xl text-xl">{subtitle}</h3>
 			{/if}
 		</div>
 		<div class="flex max-w-md flex-col items-center gap-2">
@@ -58,8 +58,8 @@
 		<div
 			use:melt={$content}
 			transition:scale
-			class="fixed left-0 top-0 z-[100] flex max-h-full overflow-y-scroll w-screen flex-col gap-4 rounded-lg bg-white p-6 shadow-lg md:left-1/2 md:top-1/2 md:max-h-[85vh] md:w-[90vw] md:max-w-[450px] md:-translate-x-1/2 md:-translate-y-1/2"
-			>
+			class="fixed left-0 top-0 z-[100] flex max-h-full w-screen flex-col gap-4 overflow-y-scroll rounded-lg bg-white p-6 shadow-lg md:left-1/2 md:top-1/2 md:max-h-[85vh] md:w-[90vw] md:max-w-[450px] md:-translate-x-1/2 md:-translate-y-1/2"
+		>
 			<div>
 				<h2 use:melt={$title} class="m-0 text-lg font-medium text-black">
 					{productTitle}

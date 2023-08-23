@@ -59,9 +59,11 @@
 	<Carousel />
 	<div class="z-10 flex h-[95vh] w-screen items-center justify-center gap-2">
 		<h1
-			class="stroke text-shadow-2xl rounded-lg px-4 py-2 text-center text-2xl text-white md:text-3xl"
+			class="stroke text-shadow-2xl rounded-lg px-4 py-2 text-center text-xl text-white sm:text-2xl md:text-3xl"
 		>
-			<span class="text-4xl font-semibold text-red-700 md:text-5xl">HIGH QUALITY BEEF</span>
+			<span class="text-2xl font-semibold text-red-700 sm:text-4xl md:text-5xl"
+				>HIGH QUALITY BEEF</span
+			>
 			<br />raised with a <span class="font-semibold text-red-700">high quality</span> life
 		</h1>
 
@@ -74,7 +76,7 @@
 	<div class="flex flex-col gap-4 rounded-t-3xl bg-neutral-200">
 		<div class="grid md:grid-cols-2">
 			<div class="flex flex-col justify-center gap-4 px-10 py-4 lg:text-lg">
-				<h2 class="text-center text-4xl font-semibold md:text-left">About Our Ranch</h2>
+				<h2 class="text-center text-2xl font-semibold xs:text-4xl md:text-left">About Our Ranch</h2>
 				<p>
 					Walking CJ Ranch is a family-owned cattle company dedicated to providing high-quality
 					custom beef raised with the customers preferences. With a deep-rooted commitment to the
@@ -93,7 +95,7 @@
 					their families and our community.
 				</p>
 			</div>
-			<div class="overflow-hidden hidden md:block md:order-first">
+			<div class="hidden overflow-hidden md:order-first md:block">
 				<img
 					src="/images/landscape.jpg"
 					alt="rancher"
@@ -105,7 +107,7 @@
 
 	<!-- Products -->
 	<div class="flex flex-col gap-4 px-4 pt-4 text-center md:px-0">
-		<h2 class="text-4xl font-semibold">What we do</h2>
+		<h2 class="text-2xl font-semibold xs:text-4xl">What we do</h2>
 		<div class="flex flex-col justify-center gap-9 md:flex-row md:gap-1">
 			{#each products as product}
 				<ProductCard {...product} />
@@ -115,7 +117,7 @@
 
 	<!-- Credibility -->
 	<div class="flex flex-col gap-4 bg-neutral-200 px-4 py-4 text-center">
-		<h2 class="text-4xl font-semibold text-black">What our customers say</h2>
+		<h2 class="text-2xl font-semibold text-black xs:text-4xl">What our customers say</h2>
 		<div class="flex flex-col gap-5 md:mt-4">
 			<div class="flex w-full flex-col justify-center gap-5 md:flex-row">
 				<ReviewCard {...reviews[0]} class="md:-rotate-6" />
@@ -127,14 +129,14 @@
 			<div class="flex flex-row justify-center gap-5">
 				<a
 					href="https://example.com"
-					class="items-center gap-2 rounded-lg bg-[#4267B2] px-2 py-2 text-lg text-white md:flex"
+					class="flex flex-col items-center gap-1 rounded-lg bg-[#4267B2] px-2 py-2 text-center text-lg text-white md:flex-row"
 				>
 					<MdiFacebook />
 					Review us on Facebook
 				</a>
 				<a
 					href="https://example.com"
-					class="items-center gap-2 rounded-lg bg-[#DB4437] px-2 py-2 text-lg text-white md:flex"
+					class="flex flex-col items-center gap-1 rounded-lg bg-[#DB4437] px-2 py-2 text-lg text-white md:flex-row"
 				>
 					<MdiGoogle />
 					Review us on Google
@@ -143,19 +145,21 @@
 		</div>
 	</div>
 	<!-- Contact -->
-	<div class="flex flex-col gap-4 text-start">
+	<div class="flex flex-col gap-4 text-start" id="contact">
 		<div class="grid md:grid-cols-2">
 			<div
 				class="flex w-full flex-col justify-center gap-4 px-10 py-4 text-center md:w-auto md:text-start lg:text-lg"
 			>
-				<h2 class="text-center text-4xl font-semibold md:text-left">Like what you see?</h2>
+				<h2 class="text-center text-2xl font-semibold xs:text-4xl md:text-left">
+					Like what you see?
+				</h2>
 				<p>
 					We prefer to talk to our customers to keep things personal and maintain accountability.
 					Call now to get on our waiting list or learn more.
 				</p>
 				<a
 					href="tel:3602695572"
-					class="mt-0 flex flex-row items-center justify-center gap-2 align-middle font-poppins text-2xl font-semibold text-red-700 md:justify-start"
+					class="mt-0 flex flex-row items-center justify-center gap-2 align-middle font-poppins text-xl font-semibold text-red-700 xs:text-2xl md:justify-start"
 				>
 					<MdiPhone />
 					(360) 269-5572
@@ -169,9 +173,9 @@
 						<img
 							src="/images/cowpetter.jpg"
 							alt="rancher"
-							class="aspect-square h-16 w-16 rounded-full object-cover object-center"
+							class="aspect-square h-12 w-12 rounded-full object-cover object-center xs:h-16 xs:w-16"
 						/>
-						<span class="font-semi text-2xl">John Hicks</span>
+						<span class="font-semi text-xl xs:text-2xl">John Hicks</span>
 					</div>
 					<p>
 						John is a second generation farmer on the Walking CJ Ranch property. He values strong
