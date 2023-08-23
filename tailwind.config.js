@@ -8,6 +8,9 @@ export default {
 			},
 			colors: {
 				primary: '#ff0000'
+			},
+			screens: {
+				xs: '320px'
 			}
 		}
 	},
