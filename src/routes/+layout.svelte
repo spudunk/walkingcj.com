@@ -4,6 +4,9 @@
 	import { onMount } from 'svelte';
 	import '../app.css';
 	import Footer from '$lib/components/Footer.svelte';
+	import '@fontsource/poppins/400.css';
+	import '@fontsource/poppins/500.css';
+	import '@fontsource/poppins/700.css';
 
 	onMount(() => {
 		onscroll = () => {
@@ -46,13 +49,6 @@
 	/>
 	<meta name="twitter:image" content="https://walkingcj.com/og_image.jpeg" />
 
-	<!-- google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-		rel="stylesheet"
-	/>
 </svelte:head>
 
 <Navbar />

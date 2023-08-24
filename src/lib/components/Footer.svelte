@@ -15,30 +15,35 @@
 			<a
 				href="tel:3602695572"
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
+				aria-label="telephone"
 			>
 				<MdiPhone />
 			</a>
 			<a
 				href="https://goo.gl/maps/dkBbgkKH2CB9FaQMA"
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
+				aria-label="location"
 			>
 				<MdiGoogleMaps />
 			</a>
 			<a
 				href="mailto:john@walkingcj.com"
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
+				aria-label="email"
 			>
 				<MdiEmail />
 			</a>
 			<a
 				href="https://www.facebook.com/groups/walkingcjranch/"
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
+				aria-label="Facebook"
 			>
 				<MdiFacebook />
 			</a>
 			<a
-				href="https://example.com"
+				href="https://www.google.com/search?q=Walking+CJ+Ranch"
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
+				aria-label="Google Business"
 			>
 				<MdiGoogle />
 			</a>

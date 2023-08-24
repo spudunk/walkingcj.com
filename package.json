@@ -38,6 +38,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@melt-ui/svelte": "^0.35.0"
+		"@fontsource/poppins": "^5.0.8",
+		"@melt-ui/svelte": "^0.35.0",
+		"@unpic/svelte": "^0.0.30",
+		"unpic": "^3.10.0"
 	}
 }

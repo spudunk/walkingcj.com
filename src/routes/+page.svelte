@@ -6,31 +6,35 @@
 	import MdiPhone from '~icons/mdi/phone';
 	import MdiGoogle from '~icons/mdi/google';
 	import MdiFacebook from '~icons/mdi/facebook';
+	import { Image } from '@unpic/svelte';
 
 	const reviews = [
 		{
 			name: 'Sage Bannick',
 			review:
 				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
-			img: '/images/reviews/0.webp'
+			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692845720/walkingcj/IMG_6382_icnni1.heic',
+			alt: 'steak dinner',
 		},
 		{
 			name: 'Sage Bannick',
 			review:
 				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
-			img: '/images/reviews/1.webp'
+			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692845720/walkingcj/IMG_6180_hkfimq.heic',
+			alt: 'steak dinner',
 		},
 		{
 			name: 'Sage Bannick',
 			review:
 				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
-			img: '/images/reviews/2.webp'
+			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692845720/walkingcj/IMG_3376_tumpzy.heic',
+			alt: 'steak dinner',
 		}
 	];
 
 	const products = [
 		{
-			img: '/images/products/0.webp',
+			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692807805/walkingcj/IMG_3091_n8dgg2.heic',
 			alt: '',
 			title: 'High Quality Beef',
 			subtitle: 'Raised to Order',
@@ -41,7 +45,7 @@
 				"We have several herds in the Lewis County area with different genetics and types of pasture. To maintain the highest quality we don't overpopulate our fields, so we limit our capacity. For this reason we keep a waiting list. Our customers know that the best is worth waiting for, and our quality doesn't disappoint. Occasionally an animal doesn't produce to our standards so we keep a small herd reserved to fill orders in these cases. We take our time raising, finishing, and aging our product to maintain a strict and refined process. We work on the timeline of the animal, not the customer. Trust us, the difference is clear in the results."
 		},
 		{
-			img: '/images/products/1.webp',
+			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692807807/walkingcj/IMG_3106_fhbjg9.heic',
 			alt: '',
 			title: 'Pasture Leasing',
 			subtitle: undefined,
@@ -59,7 +63,7 @@
 	<Carousel />
 	<div class="z-10 flex h-[95vh] w-screen items-center justify-center gap-2">
 		<h1
-			class="stroke text-shadow-2xl rounded-lg px-4 py-2 text-center text-xl text-white sm:text-2xl md:text-3xl"
+			class="custom-shadow rounded-lg px-4 py-2 text-center text-xl text-white sm:text-2xl md:text-3xl"
 		>
 			<span class="text-2xl font-semibold text-red-700 sm:text-4xl md:text-5xl"
 				>HIGH QUALITY BEEF</span
@@ -96,10 +100,14 @@
 				</p>
 			</div>
 			<div class="hidden overflow-hidden md:order-first md:block">
-				<img
-					src="/images/landscape.jpg"
-					alt="rancher"
+				<Image
+					src="https://res.cloudinary.com/dt9pi5obp/image/upload/v1692807805/walkingcj/IMG_3140_zvn3ts.heic"
+					alt="cattle in pasture"
 					class="aspect-square h-screen w-full rounded-none object-cover object-center md:rounded-tl-3xl"
+					sizes="(max-width: 767px) 0vw, 50vw"
+					layout="fullWidth"
+					priority
+					background="auto"
 				/>
 			</div>
 		</div>
@@ -129,14 +137,14 @@
 			<div class="flex flex-row justify-center gap-5">
 				<a
 					href="https://example.com"
-					class="flex flex-col items-center gap-1 rounded-lg bg-[#4267B2] px-2 py-2 text-center text-lg text-white md:flex-row"
+					class="flex flex-col items-center gap-1 rounded-lg bg-[#4267B2] px-2 py-2 text-center font-bold text-white md:flex-row"
 				>
 					<MdiFacebook />
 					Review us on Facebook
 				</a>
 				<a
 					href="https://example.com"
-					class="flex flex-col items-center gap-1 rounded-lg bg-[#DB4437] px-2 py-2 text-lg text-white md:flex-row"
+					class="flex flex-col items-center gap-1 rounded-lg bg-[#b33b30] px-2 py-2 text-lg font-bold text-white md:flex-row"
 				>
 					<MdiGoogle />
 					Review us on Google
@@ -170,10 +178,13 @@
 					class="absolute left-0 top-0 flex flex-col bg-black/75 p-4 text-white md:bottom-0 md:top-auto"
 				>
 					<div class="flex flex-row items-center gap-2">
-						<img
-							src="/images/cowpetter.jpg"
+						<Image
+							src="https://res.cloudinary.com/dt9pi5obp/image/upload/v1692807840/walkingcj/IMG_9497_n1afxh.heic"
 							alt="rancher"
 							class="aspect-square h-12 w-12 rounded-full object-cover object-center xs:h-16 xs:w-16"
+							layout="fixed"
+							height={48}
+							width={48}
 						/>
 						<span class="font-semi text-xl xs:text-2xl">John Hicks</span>
 					</div>
@@ -183,12 +194,22 @@
 						great friend to his community.
 					</p>
 				</div>
-				<img
-					src="/images/cowpetter.jpg"
+				<Image
+					src="https://res.cloudinary.com/dt9pi5obp/image/upload/v1692807840/walkingcj/IMG_9497_n1afxh.heic"
 					alt="rancher"
 					class="aspect-square h-full w-full object-cover object-center"
+					sizes="(max-width: 767px) 100vw, 50vw"
+					layout="fullWidth"
+					background="auto"
 				/>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+<style>
+	.custom-shadow {
+		filter: drop-shadow(0 5px 5px black);
+	}
+</style>

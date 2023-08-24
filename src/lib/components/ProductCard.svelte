@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createDialog, melt } from '@melt-ui/svelte';
 	import { fade, scale } from 'svelte/transition';
+	import { transformUrl } from 'unpic';
 
 	import LucideBeef from '~icons/lucide/beef';
 	import GisLayerLandcover from '~icons/gis/layer-landcover';
@@ -10,7 +11,7 @@
 	let productTitle: string = '';
 	let productDescription: string = '';
 	export let img: string = '';
-	export let alt: string = '';
+	// export let alt: string = '';
 	export let subtitle: string | undefined;
 	export let longDescription: string = '';
 	export let icon: string = '';
@@ -20,19 +21,30 @@
 		elements: { trigger, overlay, content, title, description, close, portalled },
 		states: { open }
 	} = createDialog();
+
+	let innerWidth = 640;
+
+	$: url = transformUrl({
+		url: img,
+		width: innerWidth >= 768 ? innerWidth / 2 : innerWidth,
+		height: 384,
+	});
+
 </script>
 
+<svelte:window bind:innerWidth />
+
 <div
-	class="zoombg relative h-96 w-full overflow-hidden text-white md:w-full"
-	style={`--url: url('${img}')`}
+	class="zoombg relative h-96 w-full overflow-hidden text-white"
+	style={`--url: url('${url}')`}
 >
 	<div
 		class="absolute left-0 top-0 z-40 flex h-full w-full flex-col items-center justify-center gap-2 rounded-lg bg-black bg-opacity-50 p-2 md:rounded-none"
 	>
 		<div class="flex flex-col items-center gap-1">
-			<h2 class="xs:text-4xl text-2xl">{productTitle}</h2>
+			<h2 class="text-2xl xs:text-4xl">{productTitle}</h2>
 			{#if subtitle}
-				<h3 class="xs:text-2xl text-xl">{subtitle}</h3>
+				<h3 class="text-xl xs:text-2xl">{subtitle}</h3>
 			{/if}
 		</div>
 		<div class="flex max-w-md flex-col items-center gap-2">
@@ -115,6 +127,9 @@
 		transition: transform 0.3s ease;
 		transform-origin: center;
 		z-index: 39;
+	}
+
+	@media (max-width: 640px) {
 	}
 
 	.zoombg:hover::before {
