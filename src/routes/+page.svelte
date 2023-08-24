@@ -10,25 +10,25 @@
 
 	const reviews = [
 		{
-			name: 'Sage Bannick',
-			review:
-				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
-			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692845720/walkingcj/IMG_6382_icnni1.heic',
-			alt: 'steak dinner',
-		},
-		{
-			name: 'Sage Bannick',
+			name: 'Sage B',
 			review:
 				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
 			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692845720/walkingcj/IMG_6180_hkfimq.heic',
 			alt: 'steak dinner',
 		},
 		{
-			name: 'Sage Bannick',
+			name: 'Angel A',
 			review:
-				'“Love them chops”\n“tenderloin was amazing”\n“lovin’ the t-bone”\n“Bacon is sooooo good”',
-			img: 'https://res.cloudinary.com/dt9pi5obp/image/upload/v1692845720/walkingcj/IMG_3376_tumpzy.heic',
-			alt: 'steak dinner',
+				'Felt like a warm hug for my tastebuds.',
+			img: '',
+			alt: '',
+		},
+		{
+			name: 'Chris H',
+			review:
+				'It\'s not even worth getting beef at the grocery store anymore.',
+			img: '',
+			alt: '',
 		}
 	];
 
@@ -136,15 +136,17 @@
 			</div>
 			<div class="flex flex-row justify-center gap-5">
 				<a
-					href="https://example.com"
+					href="https://www.facebook.com/WalkingCJ/reviews"
 					class="flex flex-col items-center gap-1 rounded-lg bg-[#4267B2] px-2 py-2 text-center font-bold text-white md:flex-row"
+					target="_blank"
 				>
 					<MdiFacebook />
 					Review us on Facebook
 				</a>
 				<a
-					href="https://example.com"
+					href="https://www.google.com/search?q=Walking+CJ+Ranch"
 					class="flex flex-col items-center gap-1 rounded-lg bg-[#b33b30] px-2 py-2 text-lg font-bold text-white md:flex-row"
+					target="_blank"
 				>
 					<MdiGoogle />
 					Review us on Google
