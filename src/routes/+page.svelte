@@ -179,7 +179,7 @@
 				>
 					<div class="flex flex-row items-center gap-2">
 						<Image
-							src="https://res.cloudinary.com/dt9pi5obp/image/upload/v1692807840/walkingcj/IMG_9497_n1afxh.heic"
+							src="https://res.cloudinary.com/dt9pi5obp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1692807834/walkingcj/IMG_9459_2_jqc8z5.heic"
 							alt="rancher"
 							class="aspect-square h-12 w-12 rounded-full object-cover object-center xs:h-16 xs:w-16"
 							layout="fixed"
