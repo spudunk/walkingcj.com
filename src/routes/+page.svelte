@@ -136,7 +136,7 @@
 			</div>
 			<div class="flex flex-row justify-center gap-5">
 				<a
-					href="https://www.facebook.com/WalkingCJ/reviews"
+					href="https://www.facebook.com/WalkingCJ/"
 					class="flex flex-col items-center gap-1 rounded-lg bg-[#4267B2] px-2 py-2 text-center font-bold text-white md:flex-row"
 					target="_blank"
 				>
