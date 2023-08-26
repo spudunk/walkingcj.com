@@ -34,7 +34,7 @@
 				<MdiEmail />
 			</a>
 			<a
-				href="https://www.facebook.com/walkingcj/"
+				href="https://www.facebook.com/WalkingCJ/"
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
 				aria-label="Facebook"
 			>
