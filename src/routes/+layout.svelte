@@ -8,7 +8,8 @@
 	import '@fontsource/poppins/500.css';
 	import '@fontsource/poppins/700.css';
 
-	const ogImage = "https://res.cloudinary.com/dt9pi5obp/image/upload/c_scale,w_1200/c_crop,g_auto,h_630,w_1200/v1692807846/walkingcj/IMG_9519_fa6h52.jpg"
+	const ogImage =
+		'https://res.cloudinary.com/dt9pi5obp/image/upload/c_scale,w_1200/c_crop,g_auto,h_630,w_1200/v1692807846/walkingcj/IMG_9519_fa6h52.jpg';
 	onMount(() => {
 		onscroll = () => {
 			var scrollTop =
@@ -49,9 +50,10 @@
 		content="High quality beef in SW Washington State. We believe that a quality life makes quality meat Contact us today to join our network or waiting list."
 	/>
 	<meta name="twitter:image" content={ogImage} />
-
 </svelte:head>
 
 <Navbar />
-<slot />
+<div class="overflow-x-hidden">
+	<slot />
+</div>
 <Footer />
