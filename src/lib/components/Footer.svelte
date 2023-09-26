@@ -5,6 +5,7 @@
 	import MdiEmail from '~icons/mdi/email';
 	import MdiFacebook from '~icons/mdi/facebook';
 	import MdiGoogle from '~icons/mdi/google';
+	import { data } from '$lib';
 </script>
 
 <footer class="bg-red-700 px-4 py-4">
@@ -13,35 +14,35 @@
 	>
 		<div class="flex flex-row gap-4 text-xl text-white">
 			<a
-				href="tel:3602695572"
+				href={data.phoneLink}
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
 				aria-label="telephone"
 			>
 				<MdiPhone />
 			</a>
 			<a
-				href="https://goo.gl/maps/dkBbgkKH2CB9FaQMA"
+				href={data.maps}
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
 				aria-label="location"
 			>
 				<MdiGoogleMaps />
 			</a>
 			<a
-				href="mailto:john@walkingcj.com"
+				href={data.emailLink}
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
 				aria-label="email"
 			>
 				<MdiEmail />
 			</a>
 			<a
-				href="https://www.facebook.com/WalkingCJ/"
+				href={data.facebook}
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
 				aria-label="Facebook"
 			>
 				<MdiFacebook />
 			</a>
 			<a
-				href="https://www.google.com/search?q=Walking+CJ+Ranch"
+				href={data.google}
 				class="flex flex-row items-center gap-2 align-middle transition-colors hover:text-slate-300"
 				aria-label="Google Business"
 			>

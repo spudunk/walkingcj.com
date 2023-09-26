@@ -3,6 +3,7 @@
 
 	import { scrolled } from '$lib/stores';
 	import Logo from './Logo.svelte';
+	import { data } from '$lib';
 
 	let scrollVal = false;
 
@@ -31,7 +32,7 @@
 	<!-- mobile -->
 	<a
 		class="flex h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-1 text-lg transition-colors hover:bg-red-600 md:hidden"
-		href="tel:3602695572"
+		href={data.phoneLink}
 	>
 		<MdiPhone />
 		Call Us
