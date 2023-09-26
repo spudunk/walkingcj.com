@@ -96,7 +96,7 @@
 					Review us on Facebook
 				</a>
 				<a
-					href={data.googleReview}
+					href={data.google}
 					class="flex flex-col items-center gap-1 rounded-lg bg-[#b33b30] px-2 py-2 text-lg font-bold text-white md:flex-row"
 					target="_blank"
 				>
