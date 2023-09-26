@@ -3,7 +3,6 @@
 export const data = {
   google: "https://local.google.com/place?id=11550191565085024000&use=srp", 
   googleReview: "https://g.page/r/CQAfm2wIhkqgEB0/review",
-  // google: "https://www.google.com/search?q=Walking+CJ+Ranch&ludocid=11550191565085024000&localrlb=1&lsig=AB86z5XP9PDrDxOnMtEaJFDFuzWb",
   facebook: "https://www.facebook.com/WalkingCJ",
   maps: "https://www.google.com/maps/place/Walking+CJ+Ranch/data=!4m2!3m1!1s0x5493ff96dd06d21f:0xa04a86086c9b1f00?hl=en",
   phoneLink: "tel:3602695572",
