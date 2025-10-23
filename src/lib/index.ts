@@ -57,5 +57,16 @@ export const products = [
       'Lease your land to trustworthy and humane ranchers and oversee your animals throughout their life',
     longDescription:
       "We don't like to reveal our exact process but we are transparent about what makes the quality. If you have good acreage, want to lease it, and want to be part of our network we'll show you how to maximize the potential of your pasture. To maintain our quality we are selective in who we work with and strict in our process, but if you truly care about the life of the animals and maintaining the highest quality of food for your family then give us a call. Whether or not your land qualifies, we'd be happy to talk with you and love to help fellow small farmers."
+  },
+  {
+    img: 'https://imagedelivery.net/XvH0UEoGmg1LgCBcC8XRgw/08aba789-0bc6-43e2-22df-527821616a00/public',
+    alt: '',
+    title: 'Hay',
+    subtitle: undefined,
+    icon: 'location',
+    description:
+      'Affordable hay from Eastern WA brought over by small farmers for small farmers.',
+    longDescription:
+      "We partner with small farmers in Eastern Washington to provide affordable hay to the local small farms. They bring it over to a local spot and transfer to your trailer directly off the truck. Call for more info or to get on the list and reserve your bales."
   }
 ];

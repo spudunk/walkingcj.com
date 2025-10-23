@@ -5,8 +5,10 @@
 
 	import LucideBeef from '~icons/lucide/beef';
 	import GisLayerLandcover from '~icons/gis/layer-landcover';
+	import IconGrass from '~icons/game-icons/high-grass';
 	import MdiClose from '~icons/mdi/close';
 	import MdiPhone from '~icons/mdi/phone';
+
 
 	let productTitle: string = '';
 	let productDescription: string = '';
@@ -57,7 +59,9 @@
 					<LucideBeef />
 				{:else if icon == 'location'}
 					<GisLayerLandcover />
-				{/if}
+				{:else if icon == 'grass'}
+					<IconGrass />
+					{/if}
 				Learn More
 			</button>
 		</div>
