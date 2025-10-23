@@ -3,6 +3,7 @@
 
 	import { scrolled } from '$lib/stores';
 	import Logo from './Logo.svelte';
+	import LogoFacebook from '~icons/logos/facebook';
 	import { data } from '$lib';
 
 	let scrollVal = false;
@@ -21,20 +22,27 @@
 		<Logo class="drop-shadow-2xl transition-colors" />
 		<span class="hidden md:block">Walking CJ Ranch</span>
 	</div>
-	<!-- desktop/tablet -->
-	<a
-		class="hidden h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-2 text-lg transition-colors hover:bg-red-600 md:flex"
-		href="#contact"
-	>
-		<MdiPhone />
-		Contact Us
-	</a>
-	<!-- mobile -->
-	<a
-		class="flex h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-1 text-lg transition-colors hover:bg-red-600 md:hidden"
-		href={data.phoneLink}
-	>
-		<MdiPhone />
-		Call Us
-	</a>
+
+	<div class="flex flex-row items-center gap-5">
+		<a href={data.facebook}>
+			<LogoFacebook alt="Link to Walking CJ Facebook"/>
+		</a>
+
+		<a
+			class="hidden h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-2 text-lg transition-colors hover:bg-red-600 md:flex"
+			href="#contact"
+		>
+			<MdiPhone />
+			Contact Us
+		</a>
+		<!-- mobile -->
+		<a
+			class="flex h-full items-center gap-2 rounded-lg bg-red-700 px-2 py-1 text-lg transition-colors hover:bg-red-600 md:hidden"
+			href={data.phoneLink}
+		>
+			<MdiPhone />
+			Call Us
+		</a>
+		<!-- desktop/tablet -->
+	</div>
 </nav>

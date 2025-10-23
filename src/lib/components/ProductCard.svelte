@@ -13,7 +13,6 @@
 	let productTitle: string = '';
 	let productDescription: string = '';
 	export let img: string = '';
-	// export let alt: string = '';
 	export let subtitle: string | undefined;
 	export let longDescription: string = '';
 	export let icon: string = '';
